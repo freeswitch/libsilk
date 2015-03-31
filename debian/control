@@ -11,11 +11,11 @@ Homepage: <insert the upstream URL, if relevant>
 Package: libsilk-dev
 Section: libdevel
 Architecture: any
-Depends: libsilk (= ${binary:Version})
+Depends: libsilk1 (= ${binary:Version})
 Description: The SILK codec development libraries
  <insert long description, indented with spaces>
 
-Package: libsilk
+Package: libsilk1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
