@@ -1,0 +1,5 @@
+libsilk (1.0.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- William King <william.king@quentustech.com>  Mon, 30 Mar 2015 11:03:02 -0700
