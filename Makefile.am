@@ -3,6 +3,9 @@ AUTOMAKE_OPTIONS = gnu
 NAME = libSKP_SILK_SDK
 AM_CPPFLAGS = $(AM_CFLAGS)
 
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = silk.pc
+
 EXTRA_DIST = Silk_SDK.sln \
 src/Silk_FIX.vcproj \
 test/Encoder.c \

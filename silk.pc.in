@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: silk
+Description: A silk codec library
+Requires:
+Version: @VERSION@
+Libs: -L${libdir} -lsilk
+Libs.private: -lm
+Cflags: -I${includedir}

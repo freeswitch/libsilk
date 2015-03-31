@@ -28,5 +28,6 @@ abs_builddir=`pwd`
 AC_SUBST(abs_srcdir)
 AC_SUBST(abs_builddir)
 
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile
+	silk.pc])
 AC_OUTPUT
