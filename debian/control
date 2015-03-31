@@ -12,12 +12,12 @@ Package: libsilk-dev
 Section: libdevel
 Architecture: any
 Depends: libsilk (= ${binary:Version})
-Description: The SILK codec
+Description: The SILK codec development libraries
  <insert long description, indented with spaces>
 
 Package: libsilk
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: The SILK codec development libraries
+Description: The SILK codec
  <insert long description, indented with spaces>
