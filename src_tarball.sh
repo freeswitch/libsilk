@@ -2,7 +2,7 @@
 ORIGDIR=`pwd`
 TMPDIR=libsilk.$$
 
-./boostrap.sh
+./bootstrap.sh
 
 mkdir -p ../${TMPDIR}
 
