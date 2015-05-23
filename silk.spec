@@ -8,6 +8,8 @@ URL:        http://stash.freeswitch.org
 BuildRoot:  %{_tmppath}/%{name}-%{version}-root
 Source:     libsilk-1.0.8.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRequires: automake
+BuildRequires: libtool
 
 Docdir:     %{_prefix}/doc
 
@@ -26,6 +28,7 @@ silk development files.
 %setup -q
 
 %build
+./bootstrap.sh
 %configure
 make
 
