@@ -1,7 +1,7 @@
 Summary:    libsilk is a library for the silk codec
 Name:       libsilk
 Version:    1.0.8
-Release:    1
+Release:    1%{?dist}
 License:    Skype BSD-like 
 Group:      System Environment/Libraries
 URL:        http://stash.freeswitch.org
