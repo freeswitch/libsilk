@@ -1,13 +1,15 @@
 Summary:    libsilk is a library for the silk codec
 Name:       libsilk
 Version:    1.0.8
-Release:    1
+Release:    1%{?dist}
 License:    Skype BSD-like 
 Group:      System Environment/Libraries
 URL:        http://stash.freeswitch.org
 BuildRoot:  %{_tmppath}/%{name}-%{version}-root
 Source:     libsilk-1.0.8.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRequires: automake
+BuildRequires: libtool
 
 Docdir:     %{_prefix}/doc
 
@@ -26,6 +28,7 @@ silk development files.
 %setup -q
 
 %build
+./bootstrap.sh
 %configure
 make
 

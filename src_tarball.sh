@@ -2,8 +2,6 @@
 ORIGDIR=`pwd`
 TMPDIR=libsilk.$$
 
-./bootstrap.sh
-
 mkdir -p ../${TMPDIR}
 
 cd ..
