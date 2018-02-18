@@ -137,7 +137,7 @@
   <ItemGroup>
     <ClCompile Include="SKP_Silk_A2NLSF.c" />
     <ClCompile Include="SKP_Silk_ana_filt_bank_1.c" />
-    <ClCompile Include="SKP_Silk_apply_sine_window_new.c" />
+    <ClCompile Include="SKP_Silk_apply_sine_window.c" />
     <ClCompile Include="SKP_Silk_array_maxabs.c" />
     <ClCompile Include="SKP_Silk_autocorr.c" />
     <ClCompile Include="SKP_Silk_biquad.c" />

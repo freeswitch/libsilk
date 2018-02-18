@@ -5,10 +5,10 @@ TMPDIR=libsilk.$$
 mkdir -p ../${TMPDIR}
 
 cd ..
-cp -a libsilk ${TMPDIR}/libsilk-1.0.8
+cp -a libsilk ${TMPDIR}/libsilk-1.0.9
 cd ${TMPDIR}
-rm -rf libsilk-1.0.8/.git*
-tar zcvf libsilk-1.0.8.tar.gz libsilk-1.0.8
-mv libsilk-1.0.8.tar.gz ${ORIGDIR}/.
+rm -rf libsilk-1.0.9/.git*
+tar zcvf libsilk-1.0.9.tar.gz libsilk-1.0.9
+mv libsilk-1.0.9.tar.gz ${ORIGDIR}/.
 cd ${ORIGDIR}
 rm -rf ../${TMPDIR}

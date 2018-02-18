@@ -1,6 +1,6 @@
 libsilk for Debian
-------------------
+------------------------
 
-<possible notes regarding this package - if none, delete this file>
+libsilk debian package for FreeSwitch project use
 
- -- William King <william.king@quentustech.com>  Mon, 30 Mar 2015 11:03:02 -0700
+ -- FreeSWITCH Solutions <packages@freeswitch.com>  Fri, 09 Feb 2018 12:41:37 +0200

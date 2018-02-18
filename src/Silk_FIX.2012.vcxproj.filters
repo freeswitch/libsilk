@@ -284,7 +284,7 @@
     <ClCompile Include="SKP_Silk_VQ_nearest_neighbor_FIX.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SKP_Silk_apply_sine_window_new.c">
+    <ClCompile Include="SKP_Silk_apply_sine_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SKP_Silk_control_audio_bandwidth.c">

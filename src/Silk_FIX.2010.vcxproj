@@ -133,7 +133,7 @@
   <ItemGroup>
     <ClCompile Include="SKP_Silk_A2NLSF.c" />
     <ClCompile Include="SKP_Silk_ana_filt_bank_1.c" />
-    <ClCompile Include="SKP_Silk_apply_sine_window_new.c" />
+    <ClCompile Include="SKP_Silk_apply_sine_window.c" />
     <ClCompile Include="SKP_Silk_array_maxabs.c" />
     <ClCompile Include="SKP_Silk_autocorr.c" />
     <ClCompile Include="SKP_Silk_biquad.c" />
@@ -142,7 +142,7 @@
     <ClCompile Include="SKP_Silk_bwexpander.c" />
     <ClCompile Include="SKP_Silk_bwexpander_32.c" />
     <ClCompile Include="SKP_Silk_CNG.c" />
-    <ClCompile Include="SKP_Silk_code_signs.c" /> 
+    <ClCompile Include="SKP_Silk_code_signs.c" />
     <ClCompile Include="SKP_Silk_control_audio_bandwidth.c" />
     <ClCompile Include="SKP_Silk_control_codec_FIX.c" />
     <ClCompile Include="SKP_Silk_corrMatrix_FIX.c" />
@@ -239,7 +239,7 @@
     <ClCompile Include="SKP_Silk_tables_type_offset.c" />
     <ClCompile Include="SKP_Silk_VAD.c" />
     <ClCompile Include="SKP_Silk_VQ_nearest_neighbor_FIX.c" />
-    <ClCompile Include="SKP_Silk_warped_autocorrelation_FIX.c" /> 
+    <ClCompile Include="SKP_Silk_warped_autocorrelation_FIX.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SKP_Silk_common_pitch_est_defines.h" />
@@ -253,7 +253,7 @@
     <ClInclude Include="SKP_Silk_resampler_private.h" />
     <ClInclude Include="SKP_Silk_resampler_rom.h" />
     <ClInclude Include="SKP_Silk_resampler_structs.h" />
-    <ClInclude Include="SKP_Silk_setup_complexity.h" /> 
+    <ClInclude Include="SKP_Silk_setup_complexity.h" />
     <ClInclude Include="SKP_Silk_SigProc_FIX.h" />
     <ClInclude Include="SKP_Silk_structs.h" />
     <ClInclude Include="SKP_Silk_structs_FIX.h" />
