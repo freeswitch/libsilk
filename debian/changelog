@@ -1,10 +1,10 @@
-libsilk (1.0.9-16~1-jessie+1) jessie; urgency=low
+libsilk (1.0.9-999~u1) unstable; urgency=low
 
   * Update version release
 
  -- FreeSWITCH Solutions <packages@freeswitch.com>  Fri, 09 Feb 2018 12:50:30 +0200
 
-libsilk (1.0.9-1-jessie) jessie; urgency=low
+libsilk (1.0.9~1) unstable; urgency=low
 
   * Initial release
 
