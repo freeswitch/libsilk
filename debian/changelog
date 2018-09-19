@@ -1,5 +1,11 @@
-libsilk (1.0.8-1) unstable; urgency=low
+libsilk (1.0.9-999~u1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Update version release
 
- -- William King <william.king@quentustech.com>  Mon, 30 Mar 2015 11:03:02 -0700
+ -- FreeSWITCH Solutions <packages@freeswitch.com>  Fri, 09 Feb 2018 12:50:30 +0200
+
+libsilk (1.0.9~1) unstable; urgency=low
+
+  * Initial release
+
+ -- FreeSWITCH Solutions <packages@freeswitch.com>  Fri, 09 Feb 2018 12:41:37 +0200

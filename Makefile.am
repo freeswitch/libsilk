@@ -1,5 +1,5 @@
 AM_CFLAGS = -Isrc -I$(abs_srcdir)/src -Iinterface -I$(abs_srcdir)/interface -fPIC -O3
-AUTOMAKE_OPTIONS = gnu 
+AUTOMAKE_OPTIONS = gnu
 NAME = libSKP_SILK_SDK
 AM_CPPFLAGS = $(AM_CFLAGS)
 
@@ -13,12 +13,12 @@ test/Enc_SDK.vcproj \
 test/Decoder.c \
 test/Dec_SDK.vcproj \
 test/signalCompare.c \
-test/SignalCompare.vcproj 
+test/SignalCompare.vcproj
 
 lib_LTLIBRARIES	= libSKP_SILK_SDK.la
 libSKP_SILK_SDK_la_SOURCES = src/SKP_Silk_A2NLSF.c \
 src/SKP_Silk_ana_filt_bank_1.c \
-src/SKP_Silk_apply_sine_window_new.c \
+src/SKP_Silk_apply_sine_window.c \
 src/SKP_Silk_array_maxabs.c \
 src/SKP_Silk_autocorr.c \
 src/SKP_Silk_biquad.c \
@@ -155,17 +155,17 @@ src/SKP_Silk_tuning_parameters.h \
 interface/SKP_Silk_control.h \
 interface/SKP_Silk_errors.h \
 interface/SKP_Silk_SDK_API.h \
-interface/SKP_Silk_typedef.h 
+interface/SKP_Silk_typedef.h
 
 bin_PROGRAMS = Encoder Decoder signalCompare
 Encoder_SOURCES = test/Encoder.c $(top_builddir)/interface/SKP_Silk_SDK_API.h
-Encoder_LDADD = $(lib_LTLIBRARIES) 
+Encoder_LDADD = $(lib_LTLIBRARIES)
 Encoder_LDFLAGS = $(LIBS)
 
 Decoder_SOURCES = test/Decoder.c $(top_builddir)/interface/SKP_Silk_SDK_API.h
-Decoder_LDADD = $(lib_LTLIBRARIES) 
+Decoder_LDADD = $(lib_LTLIBRARIES)
 Decoder_LDFLAGS = $(LIBS)
 
 signalCompare_SOURCES = test/signalCompare.c $(top_builddir)/interface/SKP_Silk_SDK_API.h
-signalCompare_LDADD = $(lib_LTLIBRARIES) 
+signalCompare_LDADD = $(lib_LTLIBRARIES)
 signalCompare_LDFLAGS = $(LIBS)
