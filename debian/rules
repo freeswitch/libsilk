@@ -2,11 +2,11 @@
 # -*- makefile -*-
 
 # get debian distribution codename
-DISTRIBUTION=$(shell lsb_release -sc)
+#DISTRIBUTION=$(shell lsb_release -sc)
 # get version from changelog, for string mangling
-VERSION=$(shell dpkg-parsechangelog --count 1 --show-field Version)
+#VERSION=$(shell dpkg-parsechangelog --count 1 --show-field Version)
 # add distribution codename to package version
-PACKAGEVERSION=$(subst ~,~$(DISTRIBUTION)-,$(VERSION))
+#PACKAGEVERSION=$(subst ~,~$(DISTRIBUTION)-,$(VERSION))
 
 export DH_VERBOSE=1
 
@@ -24,5 +24,5 @@ override_dh_auto_configure:
 	 --libexecdir=/usr/lib
 
 # setting mangled package version
-override_dh_gencontrol:
-	dh_gencontrol -- -v$(PACKAGEVERSION)
+#override_dh_gencontrol:
+#	dh_gencontrol -- -v$(PACKAGEVERSION)
