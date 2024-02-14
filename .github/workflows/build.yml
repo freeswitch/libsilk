@@ -36,7 +36,3 @@ jobs:
       BASE_IMAGE: signalwire/build-deb-action
       DISTRO_CODENAME: ${{ matrix.codename }}
       PLATFORM: ${{ matrix.platform }}
-      BOOTSTRAP_SCRIPT: |
-        echo "I am a custom script, look at me!"
-        pwd
-        ls -lah
