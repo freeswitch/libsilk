@@ -19,7 +19,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
-    uses: s3rj1k/actions-template/.github/workflows/cicd-docker-build-and-distribute.yml@all-in-one
+    uses: signalwire/actions-template/.github/workflows/cicd-docker-build-and-distribute.yml@main
     strategy:
       # max-parallel: 1
       fail-fast: false
