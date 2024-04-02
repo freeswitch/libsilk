@@ -1,4 +1,4 @@
-name: Build and Distribute #2
+name: Build and Distribute #3
 
 on:
   pull_request:
@@ -30,7 +30,7 @@ jobs:
           - bullseye
         platform:
           - amd64
-          - arm32v7
+          # - arm32v7
     with:
       ARTIFACTS_PATTERN: '.*\.(deb)$'
       DOCKERFILE: .github/docker/${{ matrix.os }}/${{ matrix.version }}/${{ matrix.platform }}/Dockerfile
