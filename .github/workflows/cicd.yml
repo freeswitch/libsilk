@@ -19,7 +19,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
-    uses: signalwire/actions-template/.github/workflows/cicd-docker-build-and-distribute.yml@main
+    uses: signalwire/actions-template/.github/workflows/cicd-docker-build-and-distribute.yml@gha
     strategy:
       # max-parallel: 1
       fail-fast: false
@@ -28,13 +28,13 @@ jobs:
           - debian
         version:
           - bookworm
-          - bullseye
-          - buster
+          # - bullseye
+          # - buster
         platform:
           - name: amd64
             runner: ubuntu-latest
-          - name: arm32v7
-            runner: ubuntu-latest
+          # - name: arm32v7
+          #   runner: ubuntu-latest
         # exclude:
         #   - version: bookworm
         #     platform:
@@ -60,16 +60,16 @@ jobs:
 
   meta:
     name: 'Publish build data to meta-repo'
-    if: ${{ github.event_name != 'pull_request' || contains(github.event.pull_request.title, ':upload-artifacts') }}
+    # if: ${{ github.event_name != 'pull_request' || contains(github.event.pull_request.title, ':upload-artifacts') }}
     needs:
       - deb
     permissions:
       id-token: write
       contents: read
-    uses: signalwire/actions-template/.github/workflows/meta-repo-content.yml@main
+    uses: signalwire/actions-template/.github/workflows/meta-repo-content.yml@gha
     with:
       META_CONTENT: '/var/www/libsilk/${{ github.ref_name }}/*/${{ github.run_id }}-${{ github.run_number }}'
       META_REPO: signalwire/bamboo_gha_trigger
-      META_REPO_BRANCH: trigger/libsilk/${{ github.ref_name }}
+      META_REPO_BRANCH: trigger-wip/libsilk/${{ github.ref_name }}
     secrets:
       GH_BOT_DEPLOY_TOKEN: ${{ secrets.PAT }}
