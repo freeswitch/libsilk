@@ -27,6 +27,7 @@ jobs:
         os:
           - debian
         version:
+          - trixie
           - bookworm
           - bullseye
           - buster
