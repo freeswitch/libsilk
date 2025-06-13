@@ -1,7 +1,7 @@
-ARG BUILDER_IMAGE=arm64v8/debian:bookworm
+ARG BUILDER_IMAGE=debian:trixie-20250520
 ARG MAINTAINER="Andrey Volk <andrey@signalwire.com>"
 
-FROM --platform=linux/arm64 ${BUILDER_IMAGE} AS builder
+FROM ${BUILDER_IMAGE} AS builder
 
 ARG BUILD_NUMBER=42
 ARG GIT_SHA=0000000000
