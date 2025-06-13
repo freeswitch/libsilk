@@ -1,7 +1,7 @@
 ARG BUILDER_IMAGE=arm32v7/debian:bookworm
 ARG MAINTAINER="Andrey Volk <andrey@signalwire.com>"
 
-FROM ${BUILDER_IMAGE} AS builder
+FROM --platform=linux/arm/v7 ${BUILDER_IMAGE} AS builder
 
 ARG BUILD_NUMBER=42
 ARG GIT_SHA=0000000000
